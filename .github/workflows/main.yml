@@ -27,6 +27,9 @@ jobs:
 
       - name: GitHub Action for pytest
         run: pip3 install pytest
+     
+      - name: install requirements
+        run: pip3 install -r requirements.txt
         
       - name: run app
         run: pytest test_login_page.py
