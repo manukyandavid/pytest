@@ -3,14 +3,10 @@ name: PipeLine with GitHub Actions
 on:
   push:
     branches:
-    - develop
-    - release/*
-    - qa/release-*
+    - master
   pull_request:
     branches:
-    - develop
-    - release/*
-    - qa/release-*
+    - master
 
 jobs:
   # This workflow contains a single job called "build"
